@@ -28,7 +28,7 @@
     <ListView
         android:id="@+id/mainListView"
         android:layout_width="280dp"
-        android:layout_height="@dimen/main_list_view_height"
+        android:layout_height="wrap_content"
         android:background="@android:color/white"
         android:clickable="true"
         android:layout_centerVertical="true"
