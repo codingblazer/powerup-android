@@ -171,12 +171,19 @@
                 android:src="@drawable/ic_keyboard_arrow_right_white_18dp" />
         </LinearLayout>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:id="@+id/sachin1"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
 
     <LinearLayout
         android:id="@+id/linearLayouthandbag"
         android:layout_width="@dimen/select_feature_linear_layout_width"
         android:layout_height="@dimen/select_feature_linear_layout_height"
-        android:layout_marginTop="@dimen/select_feature_linear_layout_margin_top"
+        android:layout_marginRight="20dp"
         android:layout_toEndOf="@+id/relativeLayout2"
         android:layout_toRightOf="@+id/relativeLayout2"
         android:background="@drawable/round_rect_green_shape"
@@ -246,7 +253,7 @@
         android:layout_width="@dimen/select_feature_linear_layout_width"
         android:layout_height="@dimen/select_feature_linear_layout_height"
         android:layout_alignTop="@+id/linearLayouthandbag"
-        android:layout_marginLeft="@dimen/select_feature_linear_layout_margin_left"
+
         android:layout_toRightOf="@+id/linearLayouthandbag"
         android:background="@drawable/round_rect_blue_shape"
         android:gravity="center"
@@ -308,7 +315,14 @@
                 android:src="@drawable/ic_keyboard_arrow_right_white_18dp" />
         </LinearLayout>
     </LinearLayout>
-
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sachin2"
+        android:layout_below="@id/sachin1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp">
     <LinearLayout
         android:id="@+id/linearLayoutHat"
         android:layout_width="@dimen/select_feature_linear_layout_width"
@@ -318,7 +332,8 @@
         android:layout_marginTop="@dimen/select_feature_linear_layout_margin_top"
         android:background="@drawable/round_rect_pink_shape"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginRight="20dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -445,7 +460,7 @@
                 android:src="@drawable/ic_keyboard_arrow_right_white_18dp" />
         </LinearLayout>
     </LinearLayout>
-
+    </LinearLayout>
     <RelativeLayout
         android:id="@+id/power_bar"
         android:layout_width="match_parent"
