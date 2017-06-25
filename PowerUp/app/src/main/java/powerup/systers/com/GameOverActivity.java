@@ -34,7 +34,7 @@ public class GameOverActivity extends Activity {
         storeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(GameOverActivity.this, DressingRoomActivity.class);
+                Intent intent = new Intent(GameOverActivity.this, MinesweeperGameActivity.class);
                 startActivity(intent);
             }
         });
