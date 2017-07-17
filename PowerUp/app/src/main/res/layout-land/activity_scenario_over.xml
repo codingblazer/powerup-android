@@ -50,12 +50,10 @@
 
     <Button
         android:id="@+id/homeButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/ic_launcher" />
+        android:layout_width="@dimen/home_button_height"
+        android:layout_height="@dimen/home_button_height"
+        android:background="@drawable/home_button" />
 
     <ImageView
         android:id="@+id/health_text_ImageView"

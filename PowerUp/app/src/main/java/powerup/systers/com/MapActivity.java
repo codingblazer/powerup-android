@@ -46,6 +46,8 @@ public class MapActivity extends Activity {
         setmDbHandler(new DatabaseHandler(this));
         getmDbHandler().open();
         setContentView(R.layout.gamemap);
+        Button homeButton = (Button) findViewById(R.id.home_button);
+        homeButton.setHeight(homeButton.getWidth());
 
         Button school = (Button) findViewById(R.id.HouseButton);
         school.setOnClickListener(onClickListener);
@@ -67,7 +69,6 @@ public class MapActivity extends Activity {
             }
         });
 
-        Button homeButton = (Button) findViewById(R.id.homeButton);
         homeButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {

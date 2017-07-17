@@ -5,61 +5,81 @@
     android:background="@drawable/map"
     android:orientation="horizontal">
 
-<LinearLayout
-    android:layout_weight="1.2"
-    android:layout_width="0dp"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/map_paddingBottom">
-    <Button
-        android:layout_weight="1"
-        android:id="@+id/HouseButton"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:alpha="@dimen/map_alpha"
-        android:text="@string/house" />
-    <Button
-        android:layout_weight="1"
-        android:id="@+id/BoyfriendButton"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:alpha="@dimen/map_alpha"
-        android:text="@string/boyfriend"
-        android:layout_marginRight="@dimen/map_marginBottom"/>
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/map_paddingBottom">
+
+        <Button
+            android:id="@+id/HouseButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:alpha="@dimen/map_alpha"
+            android:text="@string/house" />
+
+        <Button
+            android:id="@+id/BoyfriendButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginRight="@dimen/map_marginBottom"
+            android:layout_weight="1"
+            android:alpha="@dimen/map_alpha"
+            android:text="@string/boyfriend" />
+    </LinearLayout>
 
     <Button
-        android:layout_weight="1"
         android:id="@+id/storeButton"
         android:layout_width="0dp"
         android:layout_height="@dimen/store_height_value"
-        android:alpha="@dimen/map_alpha"
-        android:text="@string/store"
         android:layout_gravity="center"
-        android:layout_marginBottom="@dimen/map_marginBottom"/>
+        android:layout_marginBottom="@dimen/map_marginBottom"
+        android:layout_weight="1"
+        android:alpha="@dimen/map_alpha"
+        android:text="@string/store" />
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_weight="1.2">
-    <Button
-        android:id="@+id/HospitalButton"
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginBottom="@dimen/map_marginBottom"
-        android:alpha="@dimen/map_alpha"
-        android:text="@string/hospital" />
+        android:layout_weight="1.2"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/SchoolButton"
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginBottom="@dimen/map_marginBottom"
-        android:alpha="@dimen/map_alpha"
-        android:text="@string/school" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/HospitalButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/map_marginBottom"
+                android:layout_weight="5"
+                android:alpha="@dimen/map_alpha"
+                android:text="@string/hospital" />
+
+            <Button
+                android:id="@+id/home_button"
+                android:scaleType="fitXY"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/home_button_height"
+                android:layout_gravity="fill_vertical"
+                android:background="@drawable/home_button"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/SchoolButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/map_marginBottom"
+            android:layout_weight="1"
+            android:alpha="@dimen/map_alpha"
+            android:text="@string/school" />
 
     </LinearLayout>
 </LinearLayout>
