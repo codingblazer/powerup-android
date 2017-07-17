@@ -1,5 +1,7 @@
 package powerup.systers.com.powerup;
 
+import android.graphics.drawable.Drawable;
+
 import powerup.systers.com.R;
 
 /**
@@ -32,4 +34,6 @@ public class PowerUpUtils {
 
     public static volatile boolean sPauseTest = true;
     public static final String[][] SWIM_SINK_QUESTION_ANSWERS = {{"Sex is good","F"},{"We should use condom","T"},{"Sachin designed this game","T"},{"Sachin is working on Conference Android Project","F"},{"Google is future's past","F"}};
+
+    public static final int[] SCENARIO_BACKGROUNDS = {R.drawable.background,R.drawable.background,R.drawable.background,R.drawable.classroom,R.drawable.dressing_room,R.drawable.hospital,R.drawable.library};
 }
