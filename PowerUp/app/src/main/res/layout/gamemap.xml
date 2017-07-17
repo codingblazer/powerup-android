@@ -1,67 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/map">
+    android:background="@drawable/map"
+    android:orientation="horizontal">
 
+<LinearLayout
+    android:layout_weight="1.2"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/map_paddingBottom">
     <Button
+        android:layout_weight="1"
         android:id="@+id/HouseButton"
-        android:layout_width="@dimen/map_house_click_width"
-        android:layout_height="@dimen/map_house_click_height"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="@dimen/house_button_margin_left"
-        android:layout_marginTop="@dimen/house_button_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:alpha="@dimen/map_alpha"
         android:text="@string/house" />
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/BoyfriendButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:alpha="@dimen/map_alpha"
+        android:text="@string/boyfriend"
+        android:layout_marginRight="@dimen/map_marginBottom"/>
+</LinearLayout>
 
     <Button
+        android:layout_weight="1"
+        android:id="@+id/storeButton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/store_height_value"
+        android:alpha="@dimen/map_alpha"
+        android:text="@string/store"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/map_marginBottom"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1.2">
+    <Button
         android:id="@+id/HospitalButton"
-        android:layout_width="@dimen/map_hospital_click_width"
-        android:layout_height="@dimen/map_hospital_click_height"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@id/HouseButton"
-        android:layout_marginRight="@dimen/hospital_button_margin_right"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/map_marginBottom"
         android:alpha="@dimen/map_alpha"
         android:text="@string/hospital" />
 
     <Button
         android:id="@+id/SchoolButton"
-        android:layout_width="@dimen/map_school_click_width"
-        android:layout_height="@dimen/map_school_click_height"
-        android:layout_alignLeft="@id/HospitalButton"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@id/HospitalButton"
-        android:layout_marginBottom="@dimen/school_button_margin_bottom"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/map_marginBottom"
         android:alpha="@dimen/map_alpha"
         android:text="@string/school" />
 
-    <Button
-        android:id="@+id/BoyfriendButton"
-        android:layout_width="@dimen/map_boyfriend_click_width"
-        android:layout_height="@dimen/map_boyfriend_click_height"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="@dimen/boyfriend_button_margin_bottom"
-        android:layout_marginLeft="@dimen/boyfriend_button_margin_left"
-        android:alpha="@dimen/map_alpha"
-        android:text="@string/boyfriend" />
-
-    <Button
-        android:id="@+id/storeButton"
-        android:layout_width="@dimen/store_width"
-        android:layout_height="@dimen/store_height"
-        android:layout_alignTop="@+id/HouseButton"
-        android:layout_centerHorizontal="true"
-        android:alpha="@dimen/map_alpha"
-        android:text="@string/store" />
-
-    <Button
-        android:id="@+id/homeButton"
-        android:layout_width="@dimen/gamemap_homeButton_width"
-        android:layout_height="@dimen/gamemap_homeButton_height"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:alpha="@dimen/map_alpha" />
-
-</RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

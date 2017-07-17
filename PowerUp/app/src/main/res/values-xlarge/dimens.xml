@@ -44,4 +44,7 @@
     <dimen name="swim_score_textSize">30sp</dimen>
     <dimen name="swim_button_textSize">70sp</dimen>
     <dimen name="question_textSize">32sp</dimen>
+    <dimen name="map_paddingBottom">150dp</dimen>
+    <dimen name="map_marginBottom">30dp</dimen>
+    <dimen name="store_height_value">200dp</dimen>
 </resources>
