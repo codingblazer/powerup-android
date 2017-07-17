@@ -23,10 +23,6 @@
         android:textColor="@color/powerup_black"
         android:gravity="top"
         android:textSize="@dimen/game_text_size" />
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:background="@drawable/conversation_box_left">
     <ListView
         android:id="@+id/mainListView"
         android:layout_width="@dimen/gameActivity_lv_width"
@@ -34,9 +30,9 @@
         android:layout_below="@+id/questionView"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:background="@android:color/white"
-        android:clickable="true" />
-</LinearLayout>
+        android:background="@drawable/conversation_box_left"
+        android:clickable="true"
+        android:paddingLeft="50dp"/>
 
     <Button
         android:id="@+id/continueButtonGoesToMap"
