@@ -10,7 +10,7 @@ import powerup.systers.com.R;
 
 public class PowerUpUtils {
 
-    public static final int NUMBER_OF_ROUNDS = 3;
+    public static final int NUMBER_OF_ROUNDS = 1;
     public static final int NUMBER_OF_CELLS = 25;
     public static final int MAXIMUM_FLIPS_ALLOWED = 5;
     public static final int RED_BANNER = 1;
