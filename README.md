@@ -56,7 +56,7 @@ When a repository is cloned, it has a default remote called `origin` that points
 
 ## Documentation of PowerUp (Android)
 Here's the link to the official documentation:
-[Visit Documentation!](http://chetnagsocpowerupandroid.blogspot.in/2015/05/database-design.html)
+[Visit Documentation!](https://docs.google.com/document/d/1H4iaJ8UmZe_WqE8TY9L3E2cOX9YQY2q_aZBsaTbsA2Q/edit?usp=sharing)
 
 ##Coding Guidelines
 1. Don't use magic numbers or hard-coded strings. Put them in dimens.xml or strings.xml
