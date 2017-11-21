@@ -8,16 +8,28 @@
         android:label="@string/app_name"
         android:largeHeap="true"
         android:theme="@style/AppTheme">
+
         <activity
             android:name=".StartActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
+<<<<<<< HEAD
             android:screenOrientation="landscape" />
+=======
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+>>>>>>> Minesweeper Game  (#424)
         <activity
             android:name=".GameActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="landscape" />
+<<<<<<< HEAD
         <activity
             android:name=".AvatarRoomActivity"
             android:configChanges="orientation|keyboardHidden"
@@ -69,28 +81,85 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".sink_to_swim_game.SinkToSwimEndActivity"
+=======
+
+        <activity
+            android:name=".AvatarRoomActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".AvatarActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".MapActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".CompletedSceneActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".GameOverActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name=".DressingRoomActivity"
+>>>>>>> Minesweeper Game  (#424)
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="landscape"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+<<<<<<< HEAD
         <activity
             android:name=".sink_to_swim_game.SinkToSwimTutorials"
+=======
+
+        <activity
+            android:name=".SelectFeaturesActivity"
+>>>>>>> Minesweeper Game  (#424)
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="landscape"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+<<<<<<< HEAD
         <activity
             android:name=".vocab_match_game.VocabMatchGameActivity"
+=======
+
+        <activity
+            android:name=".ScenarioOverActivity"
+>>>>>>> Minesweeper Game  (#424)
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="landscape"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+<<<<<<< HEAD
         <activity
             android:name=".vocab_match_game.VocabMatchTutorials"
+=======
+
+        <activity
+            android:name=".AboutActivity"
+>>>>>>> Minesweeper Game  (#424)
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="landscape"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+<<<<<<< HEAD
         <activity
             android:name=".vocab_match_game.VocabMatchEndActivity"
             android:configChanges="orientation|keyboardHidden"
@@ -116,10 +185,27 @@
             android:screenOrientation="landscape"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
         <activity android:name=".minesweeper.MinesweeperTutorials"
+=======
+
+        <activity
+            android:name=".minesweeper.ProsAndConsActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
             android:screenOrientation="landscape"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".minesweeper.MinesweeperGameActivity"
+>>>>>>> Minesweeper Game  (#424)
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+<<<<<<< HEAD
+=======
+
+>>>>>>> Minesweeper Game  (#424)
         </activity>
     </application>
 

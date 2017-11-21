@@ -39,6 +39,7 @@
     <dimen name="pros_cons_textSize">30sp</dimen>
     <dimen name="pros_cons_paddingRight">22dp</dimen>
     <dimen name="pros_cons_paddingTop">12dp</dimen>
+<<<<<<< HEAD
     <dimen name="pointer_width">110dp</dimen>
     <dimen name="pointer_height">37dp</dimen>
     <dimen name="swim_game_paddingRight">39dp</dimen>
@@ -73,4 +74,8 @@
     <dimen name="replay_marginTop">270dp</dimen>
     <dimen name="replay_marginLeft">180dp</dimen>
     <dimen name="hair_button_marginLeft">150dp</dimen>
+=======
+
+
+>>>>>>> Minesweeper Game  (#424)
 </resources>

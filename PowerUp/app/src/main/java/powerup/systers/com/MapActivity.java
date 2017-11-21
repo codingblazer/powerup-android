@@ -12,17 +12,24 @@ import android.view.View.OnClickListener;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+<<<<<<< HEAD
 import android.widget.ImageView;
+=======
+>>>>>>> Minesweeper Game  (#424)
 
 import powerup.systers.com.db.DatabaseHandler;
 import powerup.systers.com.minesweeper.MinesweeperGameActivity;
 import powerup.systers.com.minesweeper.MinesweeperSessionManager;
+<<<<<<< HEAD
 import powerup.systers.com.powerup.PowerUpUtils;
+=======
+>>>>>>> Minesweeper Game  (#424)
 
 public class MapActivity extends Activity {
 
     private DatabaseHandler mDbHandler;
     private OnClickListener onClickListener = new OnClickListener() {
+
         @Override
         public void onClick(View v) {
             ImageView scenarioChooser = (ImageView) v;
@@ -98,7 +105,10 @@ public class MapActivity extends Activity {
             @Override
             public void onClick(View v) {
                 finish();
+<<<<<<< HEAD
                 startActivity(new Intent(MapActivity.this,StartActivity.class));
+=======
+>>>>>>> Minesweeper Game  (#424)
             }
         });
 

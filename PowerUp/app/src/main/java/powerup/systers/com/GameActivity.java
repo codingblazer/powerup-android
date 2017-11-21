@@ -29,11 +29,15 @@ import powerup.systers.com.datamodel.SessionHistory;
 import powerup.systers.com.db.DatabaseHandler;
 import powerup.systers.com.minesweeper.MinesweeperGameActivity;
 import powerup.systers.com.minesweeper.MinesweeperSessionManager;
+<<<<<<< HEAD
 import powerup.systers.com.minesweeper.MinesweeperTutorials;
 import powerup.systers.com.powerup.PowerUpUtils;
 import powerup.systers.com.sink_to_swim_game.SinkToSwimGame;
 import powerup.systers.com.sink_to_swim_game.SinkToSwimTutorials;
 import powerup.systers.com.vocab_match_game.VocabMatchTutorials;
+=======
+import powerup.systers.com.powerup.PowerUpUtils;
+>>>>>>> Minesweeper Game  (#424)
 
 @SuppressLint("NewApi")
 public class GameActivity extends Activity {
@@ -77,11 +81,18 @@ public class GameActivity extends Activity {
         findViewById(R.id.root).setBackground(getResources().getDrawable(PowerUpUtils.SCENARIO_BACKGROUNDS[scene.getId()-1]));
         goToMap = (Button) findViewById(R.id.continueButtonGoesToMap);
         SessionHistory.currScenePoints = 0;
+<<<<<<< HEAD
         ImageView eyeImageView = (ImageView) findViewById(R.id.eye_view);
         ImageView skinImageView = (ImageView) findViewById(R.id.skin_view);
         ImageView hairImageView = (ImageView) findViewById(R.id.hair_view);
         ImageView clothImageView = (ImageView) findViewById(R.id.dress_view);
         ImageView accessoryImageView = (ImageView) findViewById(R.id.accessory_view);
+=======
+        ImageView eyeImageView = (ImageView) findViewById(R.id.eyeImageView);
+        ImageView faceImageView = (ImageView) findViewById(R.id.faceImageView);
+        ImageView hairImageView = (ImageView) findViewById(R.id.hairImageView);
+        ImageView clothImageView = (ImageView) findViewById(R.id.clothImageView);
+>>>>>>> Minesweeper Game  (#424)
 
         String eyeImageName = getResources().getString(R.string.eye);
         eyeImageName = eyeImageName + getmDbHandler().getAvatarEye();
@@ -159,6 +170,7 @@ public class GameActivity extends Activity {
                             updatePoints(position);
                             getmDbHandler().setCompletedScenario(scene.getId());
                             updateScenario(-1);
+<<<<<<< HEAD
                         } else if (answers.get(position).getNextQuestionID() == -2) {
                             updatePoints(position);
                             getmDbHandler().setCompletedScenario(scene.getId());
@@ -169,6 +181,9 @@ public class GameActivity extends Activity {
                             updateScenario(-3);
                         }
                         else {
+=======
+                        } else {
+>>>>>>> Minesweeper Game  (#424)
                             if (SessionHistory.currSessionID == -1) {
                                 // Check to make sure all scenes are completed
                                 SessionHistory.currSessionID = 1;
@@ -236,6 +251,7 @@ public class GameActivity extends Activity {
                     startActivity(intent);
                 } else if (type == -1) {
                     new MinesweeperSessionManager(this).saveMinesweeperOpenedStatus(true); //marks minesweeper game as opened and incompleted
+<<<<<<< HEAD
                     startActivity(new Intent(GameActivity.this, MinesweeperTutorials.class));
                 } else if (type == -2) {
                     startActivity(new Intent(GameActivity.this, SinkToSwimTutorials.class));
@@ -243,6 +259,11 @@ public class GameActivity extends Activity {
                     startActivity(new Intent(GameActivity.this, VocabMatchTutorials.class));
                 }
 
+=======
+                    startActivity(new Intent(GameActivity.this, MinesweeperGameActivity.class).putExtra(PowerUpUtils.CALLED_BY, true));
+                }
+            }
+>>>>>>> Minesweeper Game  (#424)
         }
 
     }
